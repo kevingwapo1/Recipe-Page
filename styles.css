@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'outfit';
+    src: url('assets/fonts/outfit/static/Outfit-Light.ttf') format('truetype');
+    font-style: normal;
+    font-family: 'young';
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-style: normal;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3e5d8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    height: 100vh;
+    margin: 0;
+}
+.recipe{
+    background-color: white;
+    max-width: 650px;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+}
+h1{
+    font-family: 'young';
+}
+.recipe img{
+    display: block; /* Removes any default inline spacing */
+    width: 100%;    /* Ensures the image scales to fit the width of the container */
+    border-radius: 10px 10px 0 0; /* Rounds the top corners to match the container */
+    margin-bottom: 20px; /* Adds space below the image for a clean layout */
+    object-fit: cover;
+}
+.prepare{
+    margin-top: 20px;
+    background-color: #fff7fc;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #783e57;
+    font-weight: bold;
+}
+h3{
+    font-size: 18px;
+    margin-left: 10px;
+}
+ul{
+    margin: 5px 0 10px 15px;
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 15px;
+    color: #69645e;
+    font-weight: lighter;
+}
+li::marker{
+    color: #783e57;
+    font-weight: bold;
+}
+p1{
+    color: #69645e;
+}
+h2{
+    font-size: 25px;
+    font-family: 'young';
+    color: #7e4836;
+}
+hr{
+    border: none; 
+    height: 1px; 
+    background-color: #ccc; 
+    margin: 20px 0; 
+}
+ol{
+    margin: 5px 0 10px 15px;
+    padding-left: 20px;
+    font-size: 15px;
+    color: #69645e;
+    font-weight: lighter;
+}
+li{
+    margin-bottom: 10px;
+}
+table{
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+td {
+    padding: 8px 30px;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+td:first-child{
+    color: #69645e;
+}
+td:last-child {
+    text-align: left;
+    color: #8B4513; 
+    font-weight: bold;
+}
+.attribution {
+    text-align: center;        
+    font-size: 0.9rem;         
+    color: #black;   
+    font-weight: bold;         
+    margin-top: 20px;          
+    padding: 10px 0;            
+    width: 100%;                
+    opacity: 0.8;      
+    font-family: 'young';         
+}
+.attribution a {
+    color: #8B4513;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'young';
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+/* For devices with screen size 768px or smaller */
+@media (max-width: 768px) {
+    body {
+        justify-content: flex-start;
+        font-size: 14px;
+        background-color: white;
+    }
+
+    .recipe {
+        max-width: 100%; /* Makes the recipe container fit the screen */
+        margin: 10px; /* Reduces margins on smaller screens */
+        padding: 15px;
+        border: none;
+    }
+
+    h1 {
+        font-size: 22px; /* Slightly smaller font size for mobile */
+    }
+
+    p1, ul, ol, td {
+        font-size: 14px; /* Reduce text size for better readability */
+    }
+
+    .recipe img {
+        margin-bottom: 15px;
+        border-radius: 10px; /* Keep the rounded corners */
+    }
+
+    .prepare {
+        font-size: 16px; /* Slightly smaller font size */
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 22px; /* Adjust section heading size */
+    }
+
+    .ingredients, .instructions {
+        margin-top: 15px;
+    }
+
+    table {
+        font-size: 14px; /* Make table font smaller for mobile */
+    }
+
+    td {
+        padding: 6px 20px; /* Adjust padding for smaller devices */
+    }
+
+    hr {
+        margin: 15px 0; /* Reduce spacing for smaller screens */
+    }
+    .attribution {
+        font-size: 0.8rem; /* Slightly smaller font size for mobile */
+        padding: 8px 0;    /* Reduced padding */
+        margin-top: 15px;  /* Decreased margin */
+    }
+}
